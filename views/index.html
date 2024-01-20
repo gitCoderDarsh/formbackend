@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Gazing</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div class="home">
+        <div class="link">
+            <a href="/">Home</a>
+        </div>
+    </div>
+    <div class="event-details">
+        <div class="event-name">
+            <p>Star Gazing</p>
+        </div> 
+        <div class="acc-info">
+            <div class="register">
+                <a href="/login">
+                    <button>Login</button>
+                </a>
+            </div>
+            <div class="register">
+                <a href="/register">
+                    <button>Register</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+
+    // Read the URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const successParam = urlParams.get('success');
+
+    // Check the success parameter and show an alert
+    if (successParam === 'true') {
+        alert('Registration Cancelled');
+    } else if (successParam === 'false') {
+        alert('Error: Failed to cancel registration');
+    }
+</script>
+
+</html>

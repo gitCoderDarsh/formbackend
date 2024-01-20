@@ -1,0 +1,136 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Trebuchet MS';
+    color: white;
+    flex-direction: column;
+} 
+ 
+body::before {
+    content: "";  
+    background-image: url('stars background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    filter: blur(2px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home
+{
+    height: 50px;
+}
+
+.link
+{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.home a
+{
+    font-size: 23px;
+    text-decoration: none;
+    color:burlywood;
+}
+
+.form-body
+{
+    width: 500px;
+    box-shadow: 4px 4px 5px black;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 75px;
+}
+
+.event-details{
+    height: 140px;
+    background-color: rgb(28, 17, 171);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.event-name {
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+}
+
+.details
+{
+    display: flex;
+}
+
+.event-date
+{
+    width: 50%;
+    text-align: center;
+}
+.event-venue
+{
+    width: 50%;
+    text-align: center;
+}
+
+p{
+    display: block;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.reg-form
+{
+    height: 400px;
+    background-color: rgb(9, 10, 77);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 30px;
+}
+
+.input-label
+{
+    padding-left: 50px;
+}
+
+.input-bar
+{
+    margin-left: 70px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 70%;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+    background-color: rgb(5, 43, 108);
+    color: white;
+    font-family: 'Trebuchet MS';
+    border: none;
+}
+
+.input-bar::-webkit-inner-spin-button,
+.input-bar::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.submit {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS';
+    font-size: large;
+    transition: background-color 300ms;
+}
+
+.submit:hover
+{
+    background-color: green;
+    cursor: pointer;
+}

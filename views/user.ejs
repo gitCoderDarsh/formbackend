@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="/user.css">
+</head>
+<body>
+    <div class="home">
+        <div class="link">
+            <a href="/">Home</a>
+        </div>
+    </div>
+    <div class="event-details">
+        <div class="event-name">
+            <p>Star Gazing</p>
+        </div> 
+        <div class="user-info">
+            <% if (typeof user !== 'undefined' && user !== null && user.f_name && user.l_name) { %>
+                <p><%= user.f_name %> <%= user.l_name %><br> you are registered for the star gazing event.</p><br>
+                <div class="buttons">
+                    <div class="edit">
+                        <a href="/edit?phoneNumber=<%= user.phoneNumber %>"><button>Edit</button></a>
+                    </div>
+                    <div class="cancel">
+                        <a href="/cancel-registration?phoneNumber=<%= user.phoneNumber %>"><button>Cancel Registration</button></a>
+                        <% } else { %>
+                            <p>No user data available.</p>
+                            <% } %>
+                    </div>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

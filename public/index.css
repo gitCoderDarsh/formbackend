@@ -1,0 +1,105 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    justify-content: center; 
+    font-family: 'Trebuchet MS';
+    color: white;  
+    display: flex;
+    flex-direction: column;
+}
+
+body::before {
+    content: ""; 
+    background-image: url('stars background.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    filter: blur(2px);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home
+{
+    height: 50px;
+}
+
+.link
+{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.home a
+{
+    font-size: 23px;
+    text-decoration: none;
+    color:burlywood;
+}
+
+.event-details{
+    
+    height: 160px;
+    width: 500px;
+    box-shadow: 4px 4px 5px black;
+    border-radius: 5px;
+    background-color: rgb(28, 17, 171);
+    margin: auto;
+    margin-top: 150px;
+}
+
+.event-name {
+    justify-content: center;
+    text-align: center;
+    font-size: 28px;
+}
+
+.acc-info
+{
+    display: flex;
+}
+
+button
+{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    display: block;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Trebuchet MS';
+    font-size: large;
+    transition: background-color 300ms;
+}
+
+button:hover
+{
+    background-color: green;
+    cursor: pointer;
+}
+
+.login
+{
+    width: 50%;
+    text-align: center;
+}
+
+.register
+{
+    width: 50%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:active
+{
+    color:white;
+}

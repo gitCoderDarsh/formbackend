@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<body>
+    <div class="home">
+        <div class="link">
+            <a href="/">Home</a>
+        </div>
+    </div>
+    <div class="form-body">
+        <div class="event-details">
+            <div class="event-name">
+                <p>Star Gazing</p>
+            </div>
+            <div class="details">
+                <div class="event-date">
+                    <p>31st January, 2024</p>
+                </div>
+                <div class="event-venue">
+                    <p>Matheran, Maharashtra</p>
+                </div>
+            </div>
+        </div>
+        <div class="reg-form">
+            <form action="/update-user" method="post">
+                <label class = "input-label" for="">First Name: </label><br>
+                <input class = "input-bar" type="text" name="f_name" id="" value="<%=user.f_name %>"><br>
+                <label class = "input-label" for="">Last Name:</label><br>
+                <input class = "input-bar" type="text" name="l_name" id="" value="<%=user.l_name %>"><br>
+                <label class = "input-label" for="">Email Address: </label><br>
+                <input class = "input-bar" type="email" name="email" id="" value="<%=user.email %>"><br>
+                <label class = "input-label" for="">Contact Number: </label><br>
+                <input class = "input-bar" type="text" name="phoneNumber" id="" value="<%=user.phoneNumber %>"><br>
+                <input class = "submit" type="submit" value="Edit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
